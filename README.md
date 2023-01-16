@@ -6,7 +6,10 @@ This project is a script that enables you to export all available data from an O
 ## How to use
 
 ### 1. Initial Setup
-1. Clone this repo: git clone git@github.com:stats4sd/odk-central-exporter
+1. Clone this repo. 
+ - For Stats4SD staff: git clone git@github.com:stats4sd/odk-central-exporter
+ - For anyone else: git clone https://github.com/stats4sd/odk-central-exporter.git
+ 
 2. Inside the new folder, copy the `.env.example` file to `.env`. Then enter the url, email and password for the ODK Central Server.
 
 
@@ -40,3 +43,4 @@ exports
 
 Each zip file will contain all the submissions for the form. If the form has repeat groups, there will be multiple csv files - one for the "main" submission data, and one for each of the repeat groups.  For more information on the exported data formats, see the ruODK documentation: https://docs.ropensci.org/ruODK/reference/submission_export.html
 
+The export folders will also contain the xml definition for each form version, and (if available from ODK Central) the xlsx form files as well.
